@@ -23,18 +23,18 @@ class GetRawData(private val listener: OnDownloadComplete) : AsyncTask<String, V
 //        listener = callBackObject
 //    }
     override fun onPostExecute(result: String) {
-        Log.d(TAG, "onPostExecute called: parameter is $result")
+        Log.d(TAG, "onPostExecute called")
         listener.onDownloadComplete(result,downloadStatus)
     }
 
-    override fun doInBackground(vararg params: String?): String {
-        if(params[0] == null){
+    override fun doInBackground(vararg p0: String?): String {
+        if(p0[0] == null){
             downloadStatus = DownloadStatus.NOT_INITIALISED
             return "No Url is specified"
         }
         try {
             downloadStatus = DownloadStatus.OK
-            return URL(params[0]).readText()
+            return URL(p0[0]).readText()
         } catch (e: Exception){
             val errorMessage = when(e) {
                 is MalformedURLException ->{
