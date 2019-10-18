@@ -1,10 +1,8 @@
 package turi.manzi.manzikotlin
 
 import android.net.Uri
-import android.nfc.NdefRecord.createUri
 import android.os.Bundle
 import android.util.Log
-import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
