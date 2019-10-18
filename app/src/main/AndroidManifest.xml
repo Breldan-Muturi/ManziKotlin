@@ -14,7 +14,11 @@
         <activity
             android:name=".PhotoDetailActivity"
             android:label="@string/title_activity_photo_detail"
+            android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="turi.manzi.manzikotlin.MainActivity" />
         <activity
             android:name=".SearchActivity"
             android:label="@string/title_activity_search"
