@@ -7,6 +7,7 @@ import org.json.JSONObject
 
 private const val TAG = "GetFlickrJsonData"
 
+@Suppress("NULLABILITY_MISMATCH_BASED_ON_JAVA_ANNOTATIONS")
 class GetFlickrJsonData(private val listener: OnDataAvailable) :
     AsyncTask<String, Void, ArrayList<Photo>>() {
 
@@ -32,7 +33,7 @@ class GetFlickrJsonData(private val listener: OnDataAvailable) :
 
                 val jsonMedia = jsonPhoto.getJSONObject("media")
                 val photoUrl = jsonMedia.getString("m")
-                val link = photoUrl.replaceFirst("_m.jpg", "_j.jpg")
+                val link = photoUrl.replaceFirst("_m.jpg", "_b.jpg")
 
                 val photoObject = Photo(title, author, authorId, link, tags, photoUrl)
 
