@@ -11,14 +11,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".VideoActivity"></activity>
         <activity
             android:name=".PhotoDetailActivity"
             android:label="@string/title_activity_photo_detail"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value="turi.manzi.manzikotlin.MainActivity" />
+
         <activity
             android:name=".SearchActivity"
             android:label="@string/title_activity_search"
@@ -29,7 +32,7 @@
                 android:value="turi.manzi.manzikotlin.MainActivity" />
 
             <intent-filter>
-                <action android:name="android.intent.action.SEARCH"/>
+                <action android:name="android.intent.action.SEARCH" />
             </intent-filter>
 
             <meta-data
