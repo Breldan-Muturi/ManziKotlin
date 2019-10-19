@@ -26,13 +26,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:text="TextView" />
+                tools:text="@string/author" />
 
             <ImageView
                 android:id="@+id/photo_image"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/browse_image"
                 android:scaleType="center"
                 app:srcCompat="@drawable/placeholder" />
 
@@ -41,15 +43,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:text="TextView" />
+                tools:text="@string/title" />
 
             <TextView
                 android:id="@+id/photo_tags"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:text="TextView"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                tools:text="@string/tags" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 </ScrollView>
