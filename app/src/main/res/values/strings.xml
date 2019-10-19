@@ -13,5 +13,6 @@
     <string name="photo_tags_text">Tags: %s</string>
     <string name="action_search">Search</string>
     <string name="searchable_hint">Enter photo Tags</string>
+    <string name="search_fail">No photos match Search Criteria.\n\n Use search icon to search for Photos</string>
     <!--    <string name="photo_author_text">%1$s %2$s %3$s</string>-->
 </resources>
