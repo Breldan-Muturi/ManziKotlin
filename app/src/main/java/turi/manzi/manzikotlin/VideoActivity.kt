@@ -1,6 +1,7 @@
 package turi.manzi.manzikotlin
 
 import android.os.Bundle
+import android.util.Log
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
@@ -11,7 +12,7 @@ import com.google.android.youtube.player.YouTubePlayerView
 
 const val YOUTUBE_VIDEO_ID = "GVeKS0tNNzE&list=RDMMGVeKS0tNNzE&start_radio=1"
 const val YOUTUBE_PLAYLIST ="LPnDCTqW7zw&list=RDMMLPnDCTqW7zw&start_radio"
-
+private const val TAG ="VideoActivity"
 class VideoActivity : YouTubeBaseActivity(), YouTubePlayer.OnInitializedListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,11 +34,16 @@ class VideoActivity : YouTubeBaseActivity(), YouTubePlayer.OnInitializedListener
     }
 
     override fun onInitializationSuccess(
-        p0: YouTubePlayer.Provider?,
-        p1: YouTubePlayer?,
-        p2: Boolean
+        provider: YouTubePlayer.Provider?,
+        youTubePlayer: YouTubePlayer?,
+        wasRestored: Boolean
     ) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        Log.d(TAG,".onInitializationSuccess: provider is ${provider?.javaClass}")
+        Log.d(TAG,".onInitializationSuccess: youTubePlayer is ${youTubePlayer?.javaClass}")
+        Toast.makeText(this,"Initialized YouTube Player successfully", Toast.LENGTH_SHORT).show()
+        if(!wasRestored){
+            youTubePlayer?.cueVideo(YOUTUBE_VIDEO_ID)
+        }
     }
 
     override fun onInitializationFailure(
