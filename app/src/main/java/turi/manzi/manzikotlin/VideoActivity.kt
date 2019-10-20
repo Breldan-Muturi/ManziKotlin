@@ -10,7 +10,7 @@ import com.google.android.youtube.player.YouTubeInitializationResult
 import com.google.android.youtube.player.YouTubePlayer
 import com.google.android.youtube.player.YouTubePlayerView
 
-const val YOUTUBE_VIDEO_ID = "GVeKS0tNNzE&list=RDMMGVeKS0tNNzE&start_radio=1"
+const val YOUTUBE_VIDEO_ID = "Libvk8HUxak"
 const val YOUTUBE_PLAYLIST ="LPnDCTqW7zw&list=RDMMLPnDCTqW7zw&start_radio"
 private const val TAG ="VideoActivity"
 class VideoActivity : YouTubeBaseActivity(), YouTubePlayer.OnInitializedListener {
@@ -41,6 +41,8 @@ class VideoActivity : YouTubeBaseActivity(), YouTubePlayer.OnInitializedListener
         Log.d(TAG,".onInitializationSuccess: provider is ${provider?.javaClass}")
         Log.d(TAG,".onInitializationSuccess: youTubePlayer is ${youTubePlayer?.javaClass}")
         Toast.makeText(this,"Initialized YouTube Player successfully", Toast.LENGTH_SHORT).show()
+        youTubePlayer?.setPlayerStateChangeListener(playerStateChangeListener)
+        youTubePlayer?.setPlaybackEventListener(playbackEventListener)
         if(!wasRestored){
             youTubePlayer?.cueVideo(YOUTUBE_VIDEO_ID)
         }
@@ -56,6 +58,50 @@ class VideoActivity : YouTubeBaseActivity(), YouTubePlayer.OnInitializedListener
         } else{
             val errorMessage = "There was an error initializing youTubePlayer"
             Toast.makeText(this, errorMessage, Toast.LENGTH_LONG).show()
+        }
+    }
+
+    private val playbackEventListener = object : YouTubePlayer.PlaybackEventListener{
+        override fun onSeekTo(p0: Int) {
+
+        }
+
+        override fun onBuffering(p0: Boolean) {
+        }
+
+        override fun onPlaying() {
+            Toast.makeText(this@VideoActivity, "Good, video is playing okay", Toast.LENGTH_LONG).show()
+        }
+
+        override fun onStopped() {
+            Toast.makeText(this@VideoActivity, "Video has stopped", Toast.LENGTH_LONG).show()
+        }
+
+        override fun onPaused() {
+            Toast.makeText(this@VideoActivity, "Video has paused", Toast.LENGTH_LONG).show()
+        }
+    }
+
+    private val playerStateChangeListener = object : YouTubePlayer.PlayerStateChangeListener{
+        override fun onAdStarted() {
+            Toast.makeText(this@VideoActivity, "Click Ad now, make the video creator rich!", Toast.LENGTH_LONG).show()
+        }
+
+        override fun onLoading() {
+        }
+
+        override fun onVideoStarted() {
+            Toast.makeText(this@VideoActivity, "Video has started", Toast.LENGTH_LONG).show()
+            }
+
+        override fun onLoaded(p0: String?) {
+        }
+
+        override fun onVideoEnded() {
+            Toast.makeText(this@VideoActivity, "Video has been completed.", Toast.LENGTH_LONG).show()
+        }
+
+        override fun onError(p0: YouTubePlayer.ErrorReason?) {
         }
     }
 }
