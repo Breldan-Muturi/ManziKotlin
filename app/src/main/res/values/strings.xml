@@ -14,5 +14,9 @@
     <string name="action_search">Search</string>
     <string name="searchable_hint">Enter photo Tags</string>
     <string name="search_fail">No photos match Search Criteria.\n\n Use search icon to search for Photos</string>
+    <string name="play_single_video">play a single video</string>
+    <string name="standalone_sub_menu">standalone sub menu</string>
+    <string name="play_video">PLAY VIDEO</string>
+    <string name="play_playlist">play playlist</string>
     <!--    <string name="photo_author_text">%1$s %2$s %3$s</string>-->
 </resources>
