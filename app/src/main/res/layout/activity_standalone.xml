@@ -28,4 +28,13 @@
         android:text="@string/play_playlist"
         app:layout_constraintStart_toStartOf="@+id/btnPlayVideo"
         app:layout_constraintTop_toBottomOf="@+id/btnPlayVideo" />
+
+    <Button
+        android:id="@+id/btnSearchPhotos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="97dp"
+        android:text="@string/search_photos"
+        app:layout_constraintStart_toStartOf="@+id/btnPlayList"
+        app:layout_constraintTop_toBottomOf="@+id/btnPlayList" />
 </androidx.constraintlayout.widget.ConstraintLayout>

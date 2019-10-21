@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Manzi Kotlin</string>
+    <string name="app_name">Duara</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_search">SearchActivity</string>
     <string name="title_activity_photo_detail">Photo Detail</string>
@@ -18,5 +18,8 @@
     <string name="standalone_sub_menu">standalone sub menu</string>
     <string name="play_video">PLAY VIDEO</string>
     <string name="play_playlist">play playlist</string>
+    <string name="undefined_button">Undefined Button Clicked</string>
+    <string name="search_photos">Search Photos</string>
+    <string name="view_photos">View Posts</string>
     <!--    <string name="photo_author_text">%1$s %2$s %3$s</string>-->
 </resources>
