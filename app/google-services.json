@@ -1,0 +1,135 @@
+{
+  "project_info": {
+    "project_number": "827635968856",
+    "firebase_url": "https://manzi-8018a.firebaseio.com",
+    "project_id": "manzi-8018a",
+    "storage_bucket": "manzi-8018a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:827635968856:android:94807b69101c8b2421d32d",
+        "android_client_info": {
+          "package_name": "turi.manzi.emailAuthentication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "827635968856-jihq3si2drfnfps6fnju1rol6rqpqul3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgyE-YCInxAGh38K2s6jelJkTA6_NoxD4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "827635968856-jihq3si2drfnfps6fnju1rol6rqpqul3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:827635968856:android:07df6efac85a775d21d32d",
+        "android_client_info": {
+          "package_name": "turi.manzi.manzikotlin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "827635968856-jihq3si2drfnfps6fnju1rol6rqpqul3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgyE-YCInxAGh38K2s6jelJkTA6_NoxD4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "827635968856-jihq3si2drfnfps6fnju1rol6rqpqul3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:827635968856:android:9baf26a627cdc68021d32d",
+        "android_client_info": {
+          "package_name": "turi.mycompanyapp.firebaseuiauthenticationexample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "827635968856-ct14n9geqvtcre7if3f0ian0c31lmaug.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "turi.mycompanyapp.firebaseuiauthenticationexample",
+            "certificate_hash": "6647d617094e928c20ccecd4a93ed23edb46b68e"
+          }
+        },
+        {
+          "client_id": "827635968856-jihq3si2drfnfps6fnju1rol6rqpqul3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgyE-YCInxAGh38K2s6jelJkTA6_NoxD4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "827635968856-jihq3si2drfnfps6fnju1rol6rqpqul3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:827635968856:android:67d1723dd276762821d32d",
+        "android_client_info": {
+          "package_name": "turi.mycompanyapp.manzi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "827635968856-jihq3si2drfnfps6fnju1rol6rqpqul3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgyE-YCInxAGh38K2s6jelJkTA6_NoxD4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "827635968856-jihq3si2drfnfps6fnju1rol6rqpqul3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
