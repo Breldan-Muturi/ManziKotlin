@@ -21,5 +21,7 @@
     <string name="undefined_button">Undefined Button Clicked</string>
     <string name="search_photos">Search Photos</string>
     <string name="view_photos">View Posts</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="sign_out_disconnect">Sign Out and Disconnect</string>
     <!--    <string name="photo_author_text">%1$s %2$s %3$s</string>-->
 </resources>
