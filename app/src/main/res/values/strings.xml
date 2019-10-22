@@ -24,5 +24,9 @@
     <string name="sign_out">Sign Out</string>
     <string name="sign_out_disconnect">Sign Out and Disconnect</string>
     <string name="title_activity_maps">Map</string>
+    <string name="see_places">your chill spots</string>
+    <string name="view_hackerank">Hacker Articles</string>
+    <string name="facebook_app_id">2346710998992588</string>
+    <string name="fb_login_protocol_scheme">fb2346710998992588</string>
     <!--    <string name="photo_author_text">%1$s %2$s %3$s</string>-->
 </resources>

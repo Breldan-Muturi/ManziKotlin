@@ -41,4 +41,22 @@
         android:text="@string/view_photos"
         app:layout_constraintStart_toStartOf="@id/btnStandAlone"
         app:layout_constraintTop_toBottomOf="@+id/btnStandAlone" />
+
+    <Button
+        android:id="@+id/btnSavePlaces"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/see_places"
+        app:layout_constraintStart_toStartOf="@+id/btnViewPhotos"
+        app:layout_constraintTop_toBottomOf="@+id/btnViewPhotos" />
+
+    <Button
+        android:id="@+id/btnHackerArticles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/view_hackerank"
+        app:layout_constraintStart_toStartOf="@+id/btnSavePlaces"
+        app:layout_constraintTop_toBottomOf="@+id/btnSavePlaces" />
 </androidx.constraintlayout.widget.ConstraintLayout>

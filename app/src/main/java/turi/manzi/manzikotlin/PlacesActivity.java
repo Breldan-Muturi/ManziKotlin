@@ -1,17 +1,16 @@
 package turi.manzi.manzikotlin;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.location.Location;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.maps.model.LatLng;
 
@@ -28,9 +27,9 @@ public class PlacesActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_places);
 
-        SharedPreferences sharedPreferences = this.getSharedPreferences("turi.mycompanyapp.memorableplaces", Context.MODE_PRIVATE);
+        SharedPreferences sharedPreferences = this.getSharedPreferences("turi.manzi.manzikotlin", Context.MODE_PRIVATE);
 
         ArrayList<String> latitudes = new ArrayList<>();
 

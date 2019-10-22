@@ -14,6 +14,8 @@ class HomeActivity : AppCompatActivity(),View.OnClickListener {
         btnPlaySingle.setOnClickListener(this)
         btnStandAlone.setOnClickListener(this)
         btnViewPhotos.setOnClickListener(this)
+        btnSavePlaces.setOnClickListener(this)
+        btnHackerArticles.setOnClickListener(this)
     }
 
     override fun onClick(view: View) {
@@ -21,6 +23,8 @@ class HomeActivity : AppCompatActivity(),View.OnClickListener {
             R.id.btnPlaySingle -> Intent(this, VideoActivity::class.java)
             R.id.btnStandAlone -> Intent(this,StandAloneActivity::class.java)
             R.id.btnViewPhotos -> Intent(this, MainActivity::class.java)
+            R.id.btnSavePlaces -> Intent(this, PlacesActivity::class.java)
+            R.id.btnHackerArticles -> Intent(this, HackerActivity::class.java)
             else -> throw IllegalArgumentException("Undefined button clicked")
         }
         startActivity(intent)
