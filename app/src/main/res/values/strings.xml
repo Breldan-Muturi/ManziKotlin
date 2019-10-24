@@ -28,5 +28,13 @@
     <string name="view_hackerank">Hacker Articles</string>
     <string name="facebook_app_id">2346710998992588</string>
     <string name="fb_login_protocol_scheme">fb2346710998992588</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="default_channel_notification_name">Topic</string>
+    <string name="subscribe">subscribe</string>
+    <string name="login_token">login Token</string>
+    <string name="msg_subscribed">Subscribe To a Topic</string>
+    <string name="msg_subscribed_failed">Failed to subscribe To a Topic</string>
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %S</string>
+    <string name="fcm_message">FCM Message</string>
     <!--    <string name="photo_author_text">%1$s %2$s %3$s</string>-->
 </resources>
