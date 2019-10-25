@@ -1,7 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="turi.manzi.manzikotlin.MainActivity">
+    tools:context="turi.manzi.manzikotlin.LoginActivity">
     <item
         android:id="@+id/btnPlaySingle"
         android:title="@string/play_single_video"/>
@@ -25,10 +26,5 @@
         android:title="@string/subscribe"/>
     <item
         android:id="@+id/disconnectButton"
-        android:title="LogOut" />
-    <item
-        android:id="@+id/action_search"
-        android:icon="@android:drawable/ic_menu_search"
-        android:title="@string/action_search"
-        app:showAsAction="ifRoom" />
+        android:title="@string/logout"/>
 </menu>

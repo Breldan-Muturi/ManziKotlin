@@ -3,76 +3,31 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/bg"
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
 
-    <Button
-        android:id="@+id/btnStandAlone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginBottom="491dp"
-        android:text="@string/standalone_sub_menu"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnPlaySingle" />
-
-    <Button
-        android:id="@+id/btnPlaySingle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="245dp"
-        android:layout_marginBottom="40dp"
-        android:text="@string/play_single_video"
-        app:layout_constraintBottom_toTopOf="@id/btnStandAlone"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="203dp"
+        android:layout_height="167dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chat_icon" />
 
-    <Button
-        android:id="@+id/btnViewPhotos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="@string/view_photos"
-        app:layout_constraintStart_toStartOf="@id/btnStandAlone"
-        app:layout_constraintTop_toBottomOf="@+id/btnStandAlone" />
-
-    <Button
-        android:id="@+id/btnSavePlaces"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="@string/see_places"
-        app:layout_constraintStart_toStartOf="@+id/btnViewPhotos"
-        app:layout_constraintTop_toBottomOf="@+id/btnViewPhotos" />
-
-    <Button
-        android:id="@+id/btnHackerArticles"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="@string/view_hackerank"
-        app:layout_constraintStart_toStartOf="@+id/btnSavePlaces"
-        app:layout_constraintTop_toBottomOf="@+id/btnSavePlaces" />
-    <Button
-        android:id="@+id/subscribeButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="@string/subscribe"
-        app:layout_constraintStart_toStartOf="@+id/btnHackerArticles"
-        app:layout_constraintTop_toBottomOf="@+id/btnHackerArticles" />
-    <Button
-        android:id="@+id/logTokenButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="@string/login_token"
-        app:layout_constraintStart_toStartOf="@+id/subscribeButton"
-        app:layout_constraintTop_toBottomOf="@+id/subscribeButton" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="284dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/welcome_text"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textAllCaps="false"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 </androidx.constraintlayout.widget.ConstraintLayout>

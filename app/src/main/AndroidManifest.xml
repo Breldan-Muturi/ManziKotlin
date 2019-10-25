@@ -8,7 +8,7 @@
     -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
-
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -22,7 +22,7 @@
         <meta-data
             android:name="turi.manzi.manzikotlin.messaging.default_notification_channel_id"
             android:value="fcm_default_channel"/>
-        <activity android:name=".HackerActivity"></activity>
+        <activity android:name=".HackerActivity"/>
         <activity android:name=".ArticleActivity" />
         <activity android:name=".PlacesActivity" />
         <!--
@@ -71,7 +71,7 @@
             android:label="@string/app_name">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="turi.manzi.manzikotlin.LoginActivity" />
+                android:value="turi.manzi.manzikotlin.CreateAccountActivity" />
         </activity>
         <activity
             android:name=".VideoActivity"
