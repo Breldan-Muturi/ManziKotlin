@@ -89,7 +89,7 @@ class HomeActivity : AppCompatActivity() {
             startActivity(Intent(this, HackerActivity::class.java))
 
         }
-        if (item.itemId == R.id.logTokenButton) {
+        if (item.itemId == R.id.subscribeButton) {
             //take user to settingsActivity
             Log.d(TAG, "Subscribing to my topic")
             FirebaseMessaging.getInstance().subscribeToTopic("myTopic")
@@ -103,7 +103,7 @@ class HomeActivity : AppCompatActivity() {
                 }
 
         }
-        if (item.itemId == R.id.btnHackerArticles) {
+        if (item.itemId == R.id.logTokenButton) {
             FirebaseInstanceId.getInstance().instanceId
                 .addOnCompleteListener(OnCompleteListener { task ->
                     if (!task.isSuccessful) {
