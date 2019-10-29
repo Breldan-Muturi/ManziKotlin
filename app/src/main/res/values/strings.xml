@@ -46,5 +46,8 @@
     <string name="display_name">Display Name</string>
     <string name="enter_email">Enter Email</string>
     <string name="password">Password</string>
+    <string name="song_name">Song Name</string>
+    <string name="artist">Artist</string>
+    <string name="play">Play</string>
     <!--    <string name="photo_author_text">%1$s %2$s %3$s</string>-->
 </resources>

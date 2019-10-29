@@ -27,16 +27,15 @@ import kotlinx.android.synthetic.main.activity_login.*
 
 
 class LoginActivity : AppCompatActivity(), View.OnClickListener {
-    internal lateinit var mGoogleSignInClient: GoogleSignInClient
+    private lateinit var mGoogleSignInClient: GoogleSignInClient
     private var mAuth: FirebaseAuth? = null
     var user: FirebaseUser? = null
     private var mCallbackManager: CallbackManager? = null
-    var mAuthListener: FirebaseAuth.AuthStateListener? = null
+    private var mAuthListener: FirebaseAuth.AuthStateListener? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-        sign_in_button.setOnClickListener(this)
         //Instantiate FirebaseAuth
         mAuth = FirebaseAuth.getInstance()
         mAuthListener = FirebaseAuth.AuthStateListener {
@@ -47,7 +46,6 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
             if(user != null) {
                 //Let's go to Dashboard
                 startActivity(Intent(this, HomeActivity::class.java))
-                finish()
             }else {
 
                 Toast.makeText(this, "Not Signed In",
@@ -55,6 +53,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
                     .show()
             }
         }
+        sign_in_button.setOnClickListener(this)
 //Configure Google SignIn
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
             .requestIdToken(getString(R.string.default_web_client_id))
